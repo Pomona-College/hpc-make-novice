@@ -17,7 +17,7 @@
 [continuous-integration]: https://en.wikipedia.org/wiki/Continuous_integration "Continuous Integration"
 [docker-guide]: https://docs.docker.com/guides/docker-build/ "Docker Build Guide"
 [reproducible-builds]: https://reproducible-builds.org "Reproducible Builds"
-[sagehen-wiki]: https://github.com/pomona-college-hpc "Sagehen HPC Workshop Series on GitHub"
+[sagehen-wiki]: https://github.com/Pomona-College "Sagehen HPC Workshop Series on GitHub"
 [ondemand-portal]: https://ondemand.hpc.pomona.edu "OnDemand HPC Portal"
 [its-contact]: mailto:its-hpc@pomona.edu "HPC Support Email"
 [pomona-its]: https://www.pomona.edu/its/ "Pomona College ITS"
