@@ -12,6 +12,7 @@ carpentry: 'incubator'
 
 # Overall title for pages.
 title: 'Automation and Make — Pomona College HPC Workshop Series'
+description: 'Automating analysis pipelines with Make. Adapted from Software Carpentry for the Sagehen cluster at Pomona College.'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2015-06-18'
