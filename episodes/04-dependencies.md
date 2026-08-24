@@ -252,7 +252,28 @@ contains everything done so far in this topic.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Timestamps on a shared filesystem
+
+Make decides what to rebuild by comparing file modification times. That is
+reliable on a laptop, and mostly reliable on Sagehen — but `/bigdata` is a
+network filesystem shared across nodes, and if two nodes disagree slightly
+about the time, Make can conclude a target is newer than it really is and skip
+work you wanted done.
+
+If a rebuild is mysteriously skipped, check the timestamps directly:
+
+```bash
+ls --time-style=full-iso -l data.csv results.csv
+```
+
+`make -B` forces a rebuild of everything and is the quickest way to confirm
+that timestamps, rather than your rules, are the problem.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Make results depend on processing scripts as well as data files.
 - Dependencies are transitive: if A depends on B and B depends on C, a change to C will indirectly trigger an update to A.

@@ -429,7 +429,30 @@ Makefile, involved in building the `results.txt` target:
 
 ![](fig/02-makefile-challenge.png "results.txt dependencies represented within the Makefile"){alt='results.txt dependencies represented within the Makefile'}
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Where to run `make` on Sagehen
+
+Running `make` on the login node is fine while you are writing and testing a
+Makefile — the recipes here take milliseconds. Once the recipes do real work,
+run it inside a job instead, or you will slow the login node down for everyone:
+
+```bash
+srun --partition=short --time=01:00:00 --mem=4G --pty bash
+make all
+```
+
+Recipes do not inherit modules from your shell, so load what a recipe needs
+inside the recipe itself:
+
+```make
+results.csv : data.csv analyse.py
+	module load miniconda3 && conda run -n myenv python3 analyse.py $< $@
+```
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Use `#` for comments in Makefiles.
 - Write rules as `target: dependencies`.

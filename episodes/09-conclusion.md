@@ -175,7 +175,31 @@ of the archive directory have changed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Make as a SLURM front end
+
+Make and SLURM complement each other. Make works out *what* needs doing and in
+what order; SLURM decides *where and when* it runs. A recipe can submit a job
+rather than doing the work itself:
+
+```make
+SLURM := sbatch --parsable --partition=amd --time=02:00:00 --mem=8G --wait
+
+results/%.csv : data/%.csv
+	$(SLURM) scripts/process.sh $< $@
+```
+
+`--wait` makes `sbatch` block until the job finishes, so Make's dependency
+ordering still holds. Without it, Make races ahead and the next rule runs
+before its input exists.
+
+Workshop 21, *Reproducible Research Pipelines*, builds this into a full
+multi-step pipeline.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Makefiles save time by automating repetitive work, and save thinking by documenting how to reproduce results.
 
