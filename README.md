@@ -1,21 +1,62 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3265286.svg)](https://doi.org/10.5281/zenodo.3265286)
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
-[![Slack Status](https://img.shields.io/badge/Slack_Channel-swc--make-E01563.svg)](https://swcarpentry.slack.com/messages/C9X2YCPT5)
+# Automation and Make
 
-# make-novice
+*Pomona College HPC Workshop Series*
 
-An introduction to Make using reproducible papers as a motivating example.
-Please see [https://swcarpentry.github.io/make-novice/](https://swcarpentry.github.io/make-novice/) for a rendered version
-of this material, [the lesson template documentation][lesson-example]
-for instructions on formatting, building, and submitting material,
-or run `make` in this directory for a list of helpful commands.
+Automating analysis pipelines with Make. Adapted from Software Carpentry for the Sagehen cluster at Pomona College.
 
-Maintainer(s):
+**Lesson site:** <https://pomona-college.github.io/hpc-make-novice/>
 
-- [Gerard Capes][capes-gerard]
+## About this lesson
 
-[lesson-example]: https://swcarpentry.github.com/lesson-example/
-[capes-gerard]: https://carpentries.org/instructors/#gcapes
+This is Pomona College's adaptation of the Software Carpentry lesson
+[Automation and Make](https://swcarpentry.github.io/make-novice/), reworked for researchers and
+students using the **Sagehen** HPC cluster. Alongside the original material it
+covers how the work is done here: launching sessions through the OnDemand
+portal, where data and results belong on Sagehen's storage tiers, and when to
+move an analysis from an interactive session into a submitted job.
 
+It is one of 23 workshops in the Pomona College HPC Workshop Series, maintained
+by ITS Research Computing.
 
+## Getting started
 
+You do not need to install anything locally. Sign in to the OnDemand portal at
+<https://ondemand.hpc.pomona.edu/> with your Pomona credentials and DUO, and
+launch an interactive session from there. Full instructions, including the
+local-install alternative, are on the lesson's **Setup** page.
+
+You will need a Sagehen account. If you do not have one, contact
+<its-hpc@pomona.edu>.
+
+## Attribution
+
+Adapted from [swcarpentry/make-novice](https://github.com/swcarpentry/make-novice) by
+[Software Carpentry](https://software-carpentry.org/), used under
+[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Pomona College
+modifications are also released under CC-BY 4.0.
+
+The original lesson is maintained by Gerard Capes, with contributions from many others. Please cite the original lesson as set out in `CITATION`.
+
+"The Carpentries", "Software Carpentry" and their logos are registered
+trademarks of [Community Initiatives](https://communityin.org/). This adaptation
+is not an official Software Carpentry lesson and is not endorsed by The
+Carpentries.
+
+## Contributing
+
+Corrections and improvements are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+In short: Sagehen-specific changes belong here, while improvements to the
+underlying lesson are better sent upstream to
+[swcarpentry/make-novice](https://github.com/swcarpentry/make-novice) so the wider community
+benefits.
+
+All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Licence
+
+See [LICENSE.md](LICENSE.md). Instructional material is CC-BY 4.0; example code
+is MIT.
+
+## Contact
+
+Pomona College ITS Research Computing — <its-hpc@pomona.edu>
