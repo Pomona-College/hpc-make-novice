@@ -56,7 +56,6 @@ experience with using the shell to list directories, create, copy,
 remove and list files and directories, and run simple scripts is
 necessary.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
@@ -66,7 +65,10 @@ necessary.
 In order to follow this lesson, you will need to download some files.
 Please follow instructions on the [setup](learners/setup.md) page.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Acknowledgments
 
+Developed by **Andrew Wilson**, Director of Research Computing and Digital
+Scholarship at Pomona College, with **Andrei Motchenko**, who tested, edited
+and produced screenshots for the workshop series.
