@@ -2,7 +2,7 @@
 
 *Pomona College HPC Workshop Series*
 
-Automating analysis pipelines with Make. Adapted from Software Carpentry for the Sagehen cluster at Pomona College.
+Automating analysis pipelines with Make. Adapted from Software Carpentry for the Sagehen HPC cluster at Pomona College.
 
 **Lesson site:** <https://pomona-college.github.io/hpc-make-novice/>
 
@@ -10,7 +10,7 @@ Automating analysis pipelines with Make. Adapted from Software Carpentry for the
 
 This is Pomona College's adaptation of the Software Carpentry lesson
 [Automation and Make](https://swcarpentry.github.io/make-novice/), reworked for researchers and
-students using the **Sagehen** HPC cluster. Alongside the original material it
+students using the **Sagehen HPC** HPC cluster. Alongside the original material it
 covers how the work is done here: launching sessions through the OnDemand
 portal, where data and results belong on Sagehen's storage tiers, and when to
 move an analysis from an interactive session into a submitted job.

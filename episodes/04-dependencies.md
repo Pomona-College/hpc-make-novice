@@ -257,7 +257,7 @@ contains everything done so far in this topic.
 ## Timestamps on a shared filesystem
 
 Make decides what to rebuild by comparing file modification times. That is
-reliable on a laptop, and mostly reliable on Sagehen — but `/bigdata` is a
+reliable on a laptop, and mostly reliable on Sagehen HPC — but `/bigdata` is a
 network filesystem shared across nodes, and if two nodes disagree slightly
 about the time, Make can conclude a target is newer than it really is and skip
 work you wanted done.
