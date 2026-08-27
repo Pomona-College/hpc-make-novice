@@ -19,7 +19,7 @@ exercises: 30
 Automated build tools such as Make can help us in a number of
 ways. They help us to automate repetitive commands, hence saving us
 time and reducing the likelihood of errors compared with running
-these commands manually. On Sagehen this is especially useful inside SLURM batch jobs: a single `make` invocation can rebuild only the parts of a pipeline whose inputs changed, even when the pipeline lives on the lab's `/bigdata` share.
+these commands manually. On Sagehen HPC this is especially useful inside SLURM batch jobs: a single `make` invocation can rebuild only the parts of a pipeline whose inputs changed, even when the pipeline lives on the lab's `/bigdata` share.
 
 They can also save time by ensuring that automatically-generated
 artifacts (such as data files or plots) are only recreated when the

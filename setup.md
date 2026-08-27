@@ -2,7 +2,7 @@
 title: Setup
 ---
 
-## Running on Sagehen (recommended at Pomona)
+## Running on Sagehen HPC (recommended at Pomona)
 
 This workshop runs equally well on a personal laptop or on Sagehen, Pomona College's research computing cluster. To use Sagehen:
 

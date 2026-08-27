@@ -19,7 +19,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Let's imagine that we're interested in
-testing Zipf's Law in some of our favorite books — for example, a corpus of texts that a Pomona College digital humanities lab has placed on Sagehen at `/bigdata/lab/dhlab/zipf-corpus/`. Cecil Sagehen, the lab's friendly mascot, just dropped four new books into the directory and would like to know whether the law still holds.
+testing Zipf's Law in some of our favorite books — for example, a corpus of texts that a Pomona College digital humanities lab has placed on Sagehen HPC at `/bigdata/lab/dhlab/zipf-corpus/`. Cecil Sagehen, the lab's friendly mascot, just dropped four new books into the directory and would like to know whether the law still holds.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 

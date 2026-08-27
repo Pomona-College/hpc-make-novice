@@ -15,7 +15,7 @@ by [Software Carpentry](https://software-carpentry.org/).
 **Web Portal:** [OnDemand](https://ondemand.hpc.pomona.edu/)
 **Support:** its-hpc@pomona.edu
 
-Make is available on the Sagehen cluster by default. Automating your
+Make is available on the Sagehen HPC cluster by default. Automating your
 analysis pipelines with Make is especially valuable for reproducible
 HPC workflows.
 

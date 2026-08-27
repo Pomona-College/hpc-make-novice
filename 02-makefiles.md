@@ -431,7 +431,7 @@ Makefile, involved in building the `results.txt` target:
 
 :::::::::::::::::::::::::::::::::::::::::::::  callout
 
-## Where to run `make` on Sagehen
+## Where to run `make` on Sagehen HPC
 
 Running `make` on the login node is fine while you are writing and testing a
 Makefile — the recipes here take milliseconds. Once the recipes do real work,
