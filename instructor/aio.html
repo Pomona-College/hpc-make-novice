@@ -392,7 +392,7 @@
         
 <section id="aio-01-intro"><p>Content from <a href="01-intro.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-make-novice/edit/main/episodes/01-intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -428,7 +428,7 @@
 </div>
 <p>Let’s imagine that we’re interested in testing Zipf’s Law in some of
 our favorite books — for example, a corpus of texts that a Pomona
-College digital humanities lab has placed on Sagehen at
+College digital humanities lab has placed on Sagehen HPC at
 <code>/bigdata/lab/dhlab/zipf-corpus/</code>. Cecil Sagehen, the lab’s
 friendly mascot, just dropped four new books into the directory and
 would like to know whether the law still holds.</p>
@@ -738,7 +738,7 @@ things that are out of date.</li>
 </div>
 </div></section><section id="aio-02-makefiles"><p>Content from <a href="02-makefiles.html">Makefiles</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-make-novice/edit/main/episodes/02-makefiles.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
@@ -1193,13 +1193,14 @@ for a solution.</p>
 </div>
 <p>The following figure shows the dependencies embodied within our
 Makefile, involved in building the <code>results.txt</code> target:</p>
-<figure><img src="../fig/02-makefile-challenge.png" title="results.txt dependencies represented within the Makefile" alt="results.txt dependencies represented within the Makefile" class="figure mx-auto d-block"></figure><div id="where-to-run-make-on-sagehen" class="callout">
+<figure><img src="../fig/02-makefile-challenge.png" title="results.txt dependencies represented within the Makefile" alt="results.txt dependencies represented within the Makefile" class="figure mx-auto d-block"></figure><div id="where-to-run-make-on-sagehen-hpc" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="where-to-run-make-on-sagehen" class="callout-inner">
-<h3 class="callout-title">Where to run <code>make</code> on Sagehen</h3>
+<div id="where-to-run-make-on-sagehen-hpc" class="callout-inner">
+<h3 class="callout-title">Where to run <code>make</code> on Sagehen
+HPC</h3>
 <div class="callout-content">
 <p>Running <code>make</code> on the login node is fine while you are
 writing and testing a Makefile — the recipes here take milliseconds.
@@ -1477,7 +1478,7 @@ current rule.</li>
 </div>
 </div></section><section id="aio-04-dependencies"><p>Content from <a href="04-dependencies.html">Dependencies on Data and Code</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-make-novice/edit/main/episodes/04-dependencies.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -1682,7 +1683,7 @@ recreated</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><code>3.</code> only <code>last.dat</code> and
 <code>results.txt</code> are recreated.</p>
@@ -1711,7 +1712,7 @@ of <code>results.txt</code>, and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>If you change the rule for the <code>results.txt</code> file like
 this:</p>
@@ -1780,7 +1781,7 @@ contains everything done so far in this topic.</p>
 <h3 class="callout-title">Timestamps on a shared filesystem</h3>
 <div class="callout-content">
 <p>Make decides what to rebuild by comparing file modification times.
-That is reliable on a laptop, and mostly reliable on Sagehen — but
+That is reliable on a laptop, and mostly reliable on Sagehen HPC — but
 <code>/bigdata</code> is a network filesystem shared across nodes, and
 if two nodes disagree slightly about the time, Make can conclude a
 target is newer than it really is and skip work you wanted done.</p>
@@ -2602,7 +2603,7 @@ target to extract and format them.</li>
 </div>
 </div></section><section id="aio-09-conclusion"><p>Content from <a href="09-conclusion.html">Conclusion</a></p>
 <hr>
-<p>Last updated on 2026-08-24 |
+<p>Last updated on 2026-08-27 |
 
         <a href="https://github.com/Pomona-College/hpc-make-novice/edit/main/episodes/09-conclusion.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -2638,10 +2639,10 @@ Make?</li>
 <p>Automated build tools such as Make can help us in a number of ways.
 They help us to automate repetitive commands, hence saving us time and
 reducing the likelihood of errors compared with running these commands
-manually. On Sagehen this is especially useful inside SLURM batch jobs:
-a single <code>make</code> invocation can rebuild only the parts of a
-pipeline whose inputs changed, even when the pipeline lives on the lab’s
-<code>/bigdata</code> share.</p>
+manually. On Sagehen HPC this is especially useful inside SLURM batch
+jobs: a single <code>make</code> invocation can rebuild only the parts
+of a pipeline whose inputs changed, even when the pipeline lives on the
+lab’s <code>/bigdata</code> share.</p>
 <p>They can also save time by ensuring that automatically-generated
 artifacts (such as data files or plots) are only recreated when the
 files that were used to create these have changed in some way.</p>
@@ -2928,8 +2929,8 @@ by documenting how to reproduce results.</li>
   "url": "https://pomona-college.github.io/hpc-make-novice/instructor/aio.html",
   "identifier": "https://pomona-college.github.io/hpc-make-novice/instructor/aio.html",
   "dateCreated": "2015-06-18",
-  "dateModified": "2026-08-26",
-  "datePublished": "2026-08-26"
+  "dateModified": "2026-08-27",
+  "datePublished": "2026-08-27"
 }
 
   </script><script>
